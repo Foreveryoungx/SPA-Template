@@ -2,7 +2,7 @@ import { Header, Nav, Main, Footer } from "./components";
 import {
   AddPicturesToGallery,
   GalleryPictures,
-  PrintFormOnSubmit
+  PrintFormOnSubmit,
 } from "./lib";
 
 function render() {

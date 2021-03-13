@@ -1,10 +1,8 @@
 export default () => `
 <nav>
-  <i class="fas fa-bars"></i>
-  <ul class="hidden--mobile nav-links">
-    <li><a href="#bio">Bio</a></li>
-    <li><a href= "#gallery">Gallery</a></li>
-    <li><a href="#register">Register</a></li>
-  </ul>
+    <a href="#home">Home</a>
+    <a href="#bio">Bio</a>
+    <a href= "#gallery">Gallery</a>
+    <a href="#register">Register</a>
 </nav>
 `;
