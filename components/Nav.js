@@ -1,15 +1,10 @@
-export default (links) => `
+export default (st) => `
 <nav>
-<i class="fas fa-bars"></i>
-  <ul class="hidden--mobile nav-links">
-  ${links.reduce(
-    (html, link) =>
-      html +
-      `<a href="/${link.title !== "Home" ? link.title : ""}" title="${
-        link.title
-      }" data-navigo>${link.text}</a>`,
-    ``
-  )}
-  </ul>
-</nav>
+    <i class="fas fa-bars"></i>
+    <ul class="hidden--mobile nav-links">
+      ${st
+        .map((link) => `<a href="/${link.title}" data-navigo>${link.text}</a>`)
+        .join("")}
+    </ul>
+  </nav>
 `;

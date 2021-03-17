@@ -1,4 +1,4 @@
 export default {
   header: "Gallery",
-  view: "Gallery",
+  page: "Gallery",
 };
