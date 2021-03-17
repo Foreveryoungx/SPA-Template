@@ -1,8 +1,15 @@
-export default () => `
+export default (links) => `
 <nav>
-    <a href="#home">Home</a>
-    <a href="#bio">Bio</a>
-    <a href= "#gallery">Gallery</a>
-    <a href="#register">Register</a>
+<i class="fas fa-bars"></i>
+  <ul class="hidden--mobile nav-links">
+  ${links.reduce(
+    (html, link) =>
+      html +
+      `<a href="/${link.title !== "Home" ? link.title : ""}" title="${
+        link.title
+      }" data-navigo>${link.text}</a>`,
+    ``
+  )}
+  </ul>
 </nav>
 `;
